@@ -9,12 +9,12 @@ Ws.boot()
 /**
  * Listen for incoming socket connections
  */
-Ws.io.on('connection', (socket) => {
+Ws.io.on('connection1', (socket) => {
   socket.on('get-price', () => {
     Ws.binance.candlesticks("BTCUSDT", "1m", (error, ticks) => { //symbol
       if (error == null) {
 
-        console.log(ticks, Date.now())
+        // console.log(ticks, Date.now())
 
         // let last_tick = ticks[ticks.length - 1];
         //

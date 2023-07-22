@@ -23,6 +23,9 @@
       ],
       "Database/*": [
         "./database/*"
+      ],
+      "Helpers/*": [
+        "./helpers/*"
       ]
     },
     "types": [
@@ -33,7 +36,8 @@
       "@adonisjs/shield",
       "@japa/preset-adonis/build/adonis-typings",
       "@adonisjs/lucid",
-      "@adonisjs/auth"
+      "@adonisjs/auth",
+      "@adonisjs/i18n"
     ]
   }
 }
