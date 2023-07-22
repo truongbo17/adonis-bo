@@ -6,36 +6,42 @@
   <div class="row justify-content-center">
     <div class="col-lg-6 col-md-8">
       <div class="text-center pt-5 pb-5">
-        <h3 class="p-5">Welcome to CryptoEX</h3>
+        <h3 class="p-5">Welcome to {{ appName }}</h3>
         <div class="crypt-form shadow-lg rounded p-5 mt-3">
           <div class="crypt-form-top text-center">
             <div>
-              <h5>Log in</h5>
+              <h5>{{ i18n.formatMessage('auth.register_title_page') }}</h5>
               <div class="info-text"><p>Please check that you are visiting the correct URL</p></div>
               <div class="safeURL"><img src="./theme/images/lock.svg" alt="Safe URL"><span>https:</span><span>//auth.cryptoex.com</span></div></div></div>
           <form action="profile.html">
             <div class="form-group">
               <div class="form-label-group">
-                <label class="form-label" for="login1-email">Email or AccountID</label>
-                <a class="right-text" href="#">Need Help?</a>
+                <label class="form-label" for="login1-email">Email</label>
               </div>
               <input type="text" class="form-control" name="email" id="login1-email">
             </div>
             <div class="form-group">
               <div class="form-label-group">
                 <label class="form-label" for="login1-password">Password</label>
-                <a class="right-text" href="forgot.html">Forgot Password?</a>
               </div>
               <div class="form-control-wrap">
                 <input type="password" class="form-control" id="login1-password">
               </div>
             </div>
             <div class="form-group">
-              <button class="btn btn-lg btn-green btn-block mt-2">Sign in</button>
+              <div class="form-label-group">
+                <label class="form-label" for="login2-password">Confirm Password</label>
+              </div>
+              <div class="form-control-wrap">
+                <input type="password" class="form-control" id="login2-password">
+              </div>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-lg btn-green btn-block mt-2">{{ i18n.formatMessage('auth.register_title_page') }}</button>
             </div>
           </form>
           <div class="float-right form-itext">
-            <span class="pr-1">Not on our platform yet?</span><a href="register.html">Register</a>
+            <span class="pr-1">{{ i18n.formatMessage('auth.already_account') }}</span><a href="register.html">{{ i18n.formatMessage('auth.login_title_page') }}</a>
           </div>
           <div class="text-center pt-5 pb-3">
             <h6 class="overline-title"><span>or</span></h6>
