@@ -19,25 +19,24 @@
 */
 import I18n from '@ioc:Adonis/Addons/I18n'
 import Route from '@ioc:Adonis/Core/Route'
-import {appName} from 'Config/app'
 import './view'
 
-Route.get('/', async ({ view }) => {
+Route.get('/', async ({ view,auth }) => {
+  console.error(auth?.user)
   return view.render('welcome')
-})
+}).as('home')
 
 Route.get('/trade', 'TradesController.index')
 Route.get('/chart', 'TradesController.chart')
 
 Route.group(() => {
-  Route.get('login', 'Auth/AuthController.login')
-  Route.get('register', 'Auth/AuthController.register')
-  Route.get('test', ({logger}) => {
-    logger.info('An info message')
-    logger.info(appName)
-  })
-});
+  Route.get('login', 'Auth/AuthController.login').as('auth.login')
+  Route.post('login', 'Auth/AuthController.postLogin').as('auth.postLogin')
+  Route.get('register', 'Auth/AuthController.register').as('auth.register')
+  Route.post('register', 'Auth/AuthController.postRegister').as('auth.postRegister')
+}).middleware('guest');
 
+Route.post('/logout', 'Auth/AuthController.logout').as('auth.logout').middleware('auth')
 
 
 Route.post('language/:locale', async ({ session, response, params }) => {
@@ -50,3 +49,9 @@ Route.post('language/:locale', async ({ session, response, params }) => {
 
   response.redirect().back()
 }).as('language.update')
+
+Route.get('reload-tran', async () => {
+  await I18n.reloadTranslations()
+
+  return 'OK'
+})

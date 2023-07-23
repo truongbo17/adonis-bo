@@ -12,36 +12,61 @@
             <div>
               <h5>{{ i18n.formatMessage('auth.register_title_page') }}</h5>
               <div class="info-text"><p>Please check that you are visiting the correct URL</p></div>
-              <div class="safeURL"><img src="./theme/images/lock.svg" alt="Safe URL"><span>https:</span><span>//auth.cryptoex.com</span></div></div></div>
-          <form action="profile.html">
+              <div class="safeURL"><img src="./theme/images/lock.svg" alt="Safe URL"><span>https:</span><span>//auth.cryptoex.com</span>
+              </div>
+            </div>
+          </div>
+
+          @if(flashMessages.has('errors'))
+            @each(error in flashMessages.get('errors'))
+              @component('components.alert', { type: 'danger' })
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                <span>{{ stringTitleCase(error) }}</span>
+              @endcomponent
+            @end
+          @endif
+
+          <form method="POST" action="{{ route('auth.postRegister') }}">
+            {{ csrfField() }}
             <div class="form-group">
               <div class="form-label-group">
-                <label class="form-label" for="login1-email">Email</label>
+                <label class="form-label" for="username">Username</label>
               </div>
-              <input type="text" class="form-control" name="email" id="login1-email">
+              <input type="text" class="form-control" value="{{ flashMessages.get('username', '') }}" name="username"
+                     id="username">
             </div>
             <div class="form-group">
               <div class="form-label-group">
-                <label class="form-label" for="login1-password">Password</label>
+                <label class="form-label" for="email">Email</label>
+              </div>
+              <input type="email" class="form-control" value="{{ flashMessages.get('email', '') }}" name="email"
+                     id="email">
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <label class="form-label" for="password">Password</label>
               </div>
               <div class="form-control-wrap">
-                <input type="password" class="form-control" id="login1-password">
+                <input type="password" name="password" class="form-control" id="password">
               </div>
             </div>
             <div class="form-group">
               <div class="form-label-group">
-                <label class="form-label" for="login2-password">Confirm Password</label>
+                <label class="form-label" for="password_confirm">Confirm Password</label>
               </div>
               <div class="form-control-wrap">
-                <input type="password" class="form-control" id="login2-password">
+                <input type="password" name="password_confirm" class="form-control" id="password_confirm">
               </div>
             </div>
             <div class="form-group">
-              <button class="btn btn-lg btn-green btn-block mt-2">{{ i18n.formatMessage('auth.register_title_page') }}</button>
+              <button type="submit" class="btn btn-lg btn-green btn-block mt-2">{{
+                i18n.formatMessage('auth.register_title_page') }}
+              </button>
             </div>
           </form>
           <div class="float-right form-itext">
-            <span class="pr-1">{{ i18n.formatMessage('auth.already_account') }}</span><a href="register.html">{{ i18n.formatMessage('auth.login_title_page') }}</a>
+            <span class="pr-1">{{ i18n.formatMessage('auth.already_account') }}</span><a
+            href="{{ route('auth.login') }}">{{ i18n.formatMessage('auth.login_title_page') }}</a>
           </div>
           <div class="text-center pt-5 pb-3">
             <h6 class="overline-title"><span>or</span></h6>

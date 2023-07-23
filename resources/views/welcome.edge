@@ -11,9 +11,21 @@
 
   <main>
     <div>
+
+      <form action="/logout" method="POST">
+        {{ csrfField() }}
+        <button>Logout</button>
+      </form>
+
       <h1 class="title"> It Works! </h1>
       <p class="subtitle">
-        Congratulations, you have just created your first AdonisJS app.
+        Congratulations
+
+        @if(auth.isLoggedIn)
+          <b> {{ auth.user.username }} </b>
+        @endif
+
+        , you have just created your first AdonisJS app.
       </p>
 
       <ul>

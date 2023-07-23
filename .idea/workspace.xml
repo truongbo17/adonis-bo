@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae37919e-d1d6-4bfe-a83e-63a547e0083d" name="Changes" comment="set up base theme and add more plugins">
+    <list default="true" id="ae37919e-d1d6-4bfe-a83e-63a547e0083d" name="Changes" comment="base page register">
+      <change afterPath="$PROJECT_DIR$/resources/views/components/alert.edge" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/Auth/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Auth/AuthController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/1690008772263_users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/1690008772263_users.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/entrypoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/vi/auth.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vi/auth.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.edge" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.edge" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.edge" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/kernel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/kernel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/view.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/view.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +57,7 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/private/var/www/adonis-bo/resources/theme",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
     "ts.external.directory.path": "/private/var/www/adonis-bo/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -75,7 +89,7 @@
       <workItem from="1686468856016" duration="2321000" />
       <workItem from="1686965097325" duration="157000" />
       <workItem from="1689688225853" duration="5803000" />
-      <workItem from="1689994145240" duration="11071000" />
+      <workItem from="1689994145240" duration="23303000" />
     </task>
     <task id="LOCAL-00001" summary="add readme">
       <created>1690010819503</created>
@@ -91,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690035171927</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="base page register">
+      <created>1690036187702</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690036187702</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +133,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="add readme" />
     <MESSAGE value="set up base theme and add more plugins" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up base theme and add more plugins" />
+    <MESSAGE value="base page register" />
+    <option name="LAST_COMMIT_MESSAGE" value="base page register" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
