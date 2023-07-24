@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae37919e-d1d6-4bfe-a83e-63a547e0083d" name="Changes" comment="auth">
+    <list default="true" id="ae37919e-d1d6-4bfe-a83e-63a547e0083d" name="Changes" comment="update hotfix auth">
+      <change afterPath="$PROJECT_DIR$/public/theme/images/flags/vi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/vi/general.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.edge" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/entrypoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start/kernel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/kernel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/theme/images/flags/united-states.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/images/flags/en.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.edge" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.edge" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/private/var/www/adonis-bo/resources/theme",
+    "last_opened_file_path": "/private/var/www/adonis-bo/public/theme/images/flags",
     "nodejs_package_manager_path": "yarn",
     "settings.editor.selected.configurable": "preferences.fileTypes",
     "ts.external.directory.path": "/private/var/www/adonis-bo/node_modules/typescript/lib",
@@ -56,6 +60,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/theme/images/flags" />
       <recent name="$PROJECT_DIR$/resources/theme" />
       <recent name="$PROJECT_DIR$/resources/views" />
     </key>
@@ -76,7 +81,7 @@
       <workItem from="1686468856016" duration="2321000" />
       <workItem from="1686965097325" duration="157000" />
       <workItem from="1689688225853" duration="5803000" />
-      <workItem from="1689994145240" duration="25274000" />
+      <workItem from="1689994145240" duration="26682000" />
     </task>
     <task id="LOCAL-00001" summary="add readme">
       <created>1690010819503</created>
@@ -106,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690099109372</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update hotfix auth">
+      <created>1690110620283</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690110620283</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +141,8 @@
     <MESSAGE value="set up base theme and add more plugins" />
     <MESSAGE value="base page register" />
     <MESSAGE value="auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth" />
+    <MESSAGE value="update hotfix auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="update hotfix auth" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -21,10 +21,7 @@ import I18n from '@ioc:Adonis/Addons/I18n'
 import Route from '@ioc:Adonis/Core/Route'
 import './view'
 
-Route.get('/', async ({ view,auth }) => {
-  console.error(auth?.user)
-  return view.render('welcome')
-}).as('home')
+Route.get('/', 'HomeController.home').as('home')
 
 Route.get('/trade', 'TradesController.index')
 Route.get('/chart', 'TradesController.chart')
